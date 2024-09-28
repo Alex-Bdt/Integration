@@ -1,17 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: burlywood;
+
+}
+
 header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: baseline;
+
+    flex-grow: 1;
+    align-self: center;
+    background-color: #5D96B5;
+    color: #fff;
+}
+
+#nav2{
+    align-self: flex-end;
+    width: 25%;
+    background-color: #fff;
+    color: #707070;
+    font-family: 'Zona Pro', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#esp{
+    color: #163174;
+}
+
+
+#p1{
+    height: 600px; /*indicatif*/
+    background-color: #5D96B5;
+    color: #fff;
 
 }
 
 header p{
-    position: relative;
+
     /*color: #fff;*/
     font-size: 15px;
     font-family: Helvetica;
@@ -26,9 +61,10 @@ header #logo{
 }
 
 #p1 button{
-    border-color: #fff;
+
     background-color: #fff;
-    border-radius: 0;
+    border: 0;
     width: 200px;
-    height: 100px;
+    height: 80px;
+
 }
