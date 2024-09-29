@@ -6,8 +6,16 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    background-color: burlywood;
+    
+}
 
+/*-----------------------------*/
+/*----------   P 1   ----------*/
+/*-----------------------------*/
+
+.container #cont1{
+    height: 515px; /*indicatif*/
+    align-items: flex-end;
 }
 
 header{
@@ -17,7 +25,7 @@ header{
 
     flex-grow: 1;
     align-self: center;
-    background-color: #5D96B5;
+
     color: #fff;
 }
 
@@ -33,6 +41,11 @@ header{
     justify-content: space-around;
 }
 
+#nav1{
+    align-self: flex-end;
+    
+}
+
 #esp{
     color: #163174;
 }
@@ -42,7 +55,10 @@ header{
     height: 600px; /*indicatif*/
     background-color: #5D96B5;
     color: #fff;
+}
 
+#espace{
+    color: #163174;
 }
 
 header p{
@@ -61,10 +77,59 @@ header #logo{
 }
 
 #p1 button{
-
-    background-color: #fff;
+    background-color:#fff;
     border: 0;
     width: 200px;
     height: 80px;
+}
 
+/*-----------------------------*/
+/*---------- PARTAGE ----------*/
+/*-----------------------------*/
+
+#partage{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 46%;
+    right: 0;
+    background-color: #fff;
+}
+#partage #menuPartage{
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    display: inline-block;
+}
+#partage ul{
+    display: inline;
+}
+#partage ul li{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+#partage ul li p{
+    width: 80px;
+    height: 80px;
+}
+#partage ul li:hover ul{
+    display: block;
+}
+#partage ul li ul{
+    position: absolute;
+    display: none;
+}
+#partage ul li ul li{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: block;
+}
+#partage ul li ul li:hover {
+    background-color: #d0d0d0;
+}
+#partage ul li ul li #menuPartage{
+    display: block !important;
 }
